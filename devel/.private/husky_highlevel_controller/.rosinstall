@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ines/catkin_ws/devel/.private/husky_highlevel_controller/setup.sh

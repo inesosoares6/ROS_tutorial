@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libHuskyHighlevelController.so -o /home/ines/catkin_ws/devel/.private/husky_highlevel_controller/lib/libHuskyHighlevelController.so CMakeFiles/HuskyHighlevelController.dir/src/HuskyHighlevelController.cpp.o 
