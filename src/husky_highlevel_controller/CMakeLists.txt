@@ -40,11 +40,6 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-## Declare a C++ library
-add_library(HuskyHighlevelController
-  src/HuskyHighlevelController.cpp
-)
-
 ## Declare a C++ executable
 add_executable(${PROJECT_NAME}
   src/${PROJECT_NAME}_node.cpp
@@ -53,11 +48,6 @@ add_executable(${PROJECT_NAME}
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(${PROJECT_NAME}
-  ${catkin_LIBRARIES}
-)
-
-target_link_libraries(${PROJECT_NAME}
-  HuskyHighlevelController
   ${catkin_LIBRARIES}
 )
 
