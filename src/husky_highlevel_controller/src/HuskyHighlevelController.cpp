@@ -11,6 +11,7 @@ HuskyHighlevelController::HuskyHighlevelController(ros::NodeHandle& nodeHandle) 
   ROS_INFO_STREAM(topic_name << " " << queue_size);
 	laser_scan_subs = nodeHandle.subscribe(topic_name, queue_size, &HuskyHighlevelController::laser_scan_Callback, this); 
   controlled_cmd_vel_publ = nodeHandle.advertise<geometry_msgs::Twist>("/cmd_vel",1);
+  pillar_vis_publ = nodeHandle.advertise<visualization_msgs::Marker>("visualization_marker",0);
 }
 void HuskyHighlevelController::laser_scan_Callback(const sensor_msgs::LaserScan::ConstPtr& laser_scan_msgs){
   minDistance = 30;
@@ -34,6 +35,8 @@ void HuskyHighlevelController::laser_scan_Callback(const sensor_msgs::LaserScan:
 
   controlled_cmd_vel_publ.publish(cmd_vel_command);
 
+  pillar_vis_marker_func();
+
   ROS_INFO_STREAM("The " << direction_index << "st message is chosen in " << laser_scan_distance.size() << " messages");
   ROS_INFO_STREAM("minDistance detected by laser: " << minDistance << ", angle is " << pillarAngle);
 
@@ -42,6 +45,33 @@ void HuskyHighlevelController::laser_scan_Callback(const sensor_msgs::LaserScan:
 void HuskyHighlevelController::husky_angle_controller(float speed, float angle){
   cmd_vel_command.linear.x = speed;
   cmd_vel_command.angular.z = control_gain * (0-(angle-pi/2));
+}
+
+void HuskyHighlevelController::pillar_vis_marker_func(){
+	visualization_msgs::Marker marker;
+	marker.header.frame_id = "base_laser";
+	marker.header.stamp = ros::Time();
+	marker.ns = "my_namespace";
+	marker.id = 0;
+	marker.type = visualization_msgs::Marker::SPHERE;
+	marker.action = visualization_msgs::Marker::ADD;
+	marker.pose.position.y = minDistance * cos(pillarAngle);
+	marker.pose.position.x = minDistance * sin(pillarAngle);
+	marker.pose.position.z = 1;
+	marker.pose.orientation.x = 0.0;
+	marker.pose.orientation.y = 0.0;
+	marker.pose.orientation.z = 0.0;
+	marker.pose.orientation.w = 0.0;
+	marker.scale.x = 1;
+	marker.scale.y = 1;
+	marker.scale.z = 1;
+	marker.color.a = 1.0; // Don't forget to set the alpha!
+	marker.color.r = 0.0;
+	marker.color.g = 0.0;
+	marker.color.b = 1.0;
+	//only if using a MESH_RESOURCE marker type:
+	marker.mesh_resource = "package://pr2_description/meshes/base_v0/base.dae";
+	pillar_vis_publ.publish( marker );
 }
 
 HuskyHighlevelController::~HuskyHighlevelController()
