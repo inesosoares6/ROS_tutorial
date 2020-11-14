@@ -35,6 +35,7 @@ private:
 	int queue_size;
 	float minDistance;
 	int direction_index;
+	geometry_msgs::Twist cmd_vel_command;
 
 	ros::Subscriber laser_scan_subs;
 	ros::Publisher controlled_cmd_vel_publ;
