@@ -5,6 +5,7 @@
 #include <string>
 #include <std_msgs/Float32.h>
 #include <sensor_msgs/LaserScan.h>
+#include <geometry_msgs/Twist.h>
 
 using std::vector;
 using std::string;
@@ -36,6 +37,7 @@ private:
 	int direction_index;
 
 	ros::Subscriber laser_scan_subs;
+	ros::Publisher controlled_cmd_vel_publ;
 };
 
 } /* namespace */
