@@ -7,6 +7,8 @@
 #include <sensor_msgs/LaserScan.h>
 #include <geometry_msgs/Twist.h>
 
+#define pi 3.1419
+
 using std::vector;
 using std::string;
 
@@ -36,6 +38,10 @@ private:
 	float minDistance;
 	int direction_index;
 	geometry_msgs::Twist cmd_vel_command;
+	float control_gain;
+	float pillarAngle;
+	void husky_angle_controller(float speed, float angle);
+	bool status_;
 
 	ros::Subscriber laser_scan_subs;
 	ros::Publisher controlled_cmd_vel_publ;
