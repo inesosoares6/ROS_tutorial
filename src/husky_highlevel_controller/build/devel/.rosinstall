@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/mirrorlabs/eth_ws/src/husky_highlevel_controller/build/devel/setup.sh
