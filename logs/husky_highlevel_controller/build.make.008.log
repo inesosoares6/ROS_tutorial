@@ -1,0 +1,5 @@
+[35m[1mScanning dependencies of target husky_highlevel_controller[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/husky_highlevel_controller.dir/src/husky_highlevel_controller_node.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/husky_highlevel_controller.dir/src/HuskyHighlevelController.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/ines/catkin_ws/devel/.private/husky_highlevel_controller/lib/husky_highlevel_controller/husky_highlevel_controller[0m
+[100%] Built target husky_highlevel_controller

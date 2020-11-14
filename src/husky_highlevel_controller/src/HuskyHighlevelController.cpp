@@ -27,11 +27,7 @@ void HuskyHighlevelController::laser_scan_Callback(const sensor_msgs::LaserScan:
 
   pillarAngle = -0.785 + 1.5 * pi/720 * direction_index;
 
-  if(status_ == true){
-    husky_angle_controller(2,pillarAngle);
-  } else{
-    husky_angle_controller(0,pi/2);
-  }
+  husky_angle_controller(2,pillarAngle);
 
   controlled_cmd_vel_publ.publish(cmd_vel_command);
 
