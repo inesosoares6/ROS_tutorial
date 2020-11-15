@@ -20,15 +20,29 @@ geometry_msgs/Twist.h
 visualization_msgs/Marker.h
 -
 
+/home/ines/catkin_ws/src/husky_highlevel_controller/include/husky_highlevel_controller/MoveRobot.hpp
+ros/ros.h
+-
+sensor_msgs/LaserScan.h
+-
+string
+-
+
 /home/ines/catkin_ws/src/husky_highlevel_controller/src/HuskyHighlevelController.cpp
 husky_highlevel_controller/HuskyHighlevelController.hpp
 /home/ines/catkin_ws/src/husky_highlevel_controller/src/husky_highlevel_controller/HuskyHighlevelController.hpp
+
+/home/ines/catkin_ws/src/husky_highlevel_controller/src/MoveRobot.cpp
+husky_highlevel_controller/MoveRobot.hpp
+/home/ines/catkin_ws/src/husky_highlevel_controller/src/husky_highlevel_controller/MoveRobot.hpp
 
 /home/ines/catkin_ws/src/husky_highlevel_controller/src/husky_highlevel_controller_node.cpp
 ros/ros.h
 -
 husky_highlevel_controller/HuskyHighlevelController.hpp
 /home/ines/catkin_ws/src/husky_highlevel_controller/src/husky_highlevel_controller/HuskyHighlevelController.hpp
+husky_highlevel_controller/MoveRobot.hpp
+/home/ines/catkin_ws/src/husky_highlevel_controller/src/husky_highlevel_controller/MoveRobot.hpp
 
 /opt/ros/melodic/include/geometry_msgs/Point.h
 string

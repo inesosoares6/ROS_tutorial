@@ -649,6 +649,33 @@ src/HuskyHighlevelController.cpp.s:
 	$(MAKE) -f CMakeFiles/husky_highlevel_controller.dir/build.make CMakeFiles/husky_highlevel_controller.dir/src/HuskyHighlevelController.cpp.s
 .PHONY : src/HuskyHighlevelController.cpp.s
 
+src/MoveRobot.o: src/MoveRobot.cpp.o
+
+.PHONY : src/MoveRobot.o
+
+# target to build an object file
+src/MoveRobot.cpp.o:
+	$(MAKE) -f CMakeFiles/husky_highlevel_controller.dir/build.make CMakeFiles/husky_highlevel_controller.dir/src/MoveRobot.cpp.o
+.PHONY : src/MoveRobot.cpp.o
+
+src/MoveRobot.i: src/MoveRobot.cpp.i
+
+.PHONY : src/MoveRobot.i
+
+# target to preprocess a source file
+src/MoveRobot.cpp.i:
+	$(MAKE) -f CMakeFiles/husky_highlevel_controller.dir/build.make CMakeFiles/husky_highlevel_controller.dir/src/MoveRobot.cpp.i
+.PHONY : src/MoveRobot.cpp.i
+
+src/MoveRobot.s: src/MoveRobot.cpp.s
+
+.PHONY : src/MoveRobot.s
+
+# target to generate assembly for a file
+src/MoveRobot.cpp.s:
+	$(MAKE) -f CMakeFiles/husky_highlevel_controller.dir/build.make CMakeFiles/husky_highlevel_controller.dir/src/MoveRobot.cpp.s
+.PHONY : src/MoveRobot.cpp.s
+
 src/husky_highlevel_controller_node.o: src/husky_highlevel_controller_node.cpp.o
 
 .PHONY : src/husky_highlevel_controller_node.o
@@ -727,6 +754,9 @@ help:
 	@echo "... src/HuskyHighlevelController.o"
 	@echo "... src/HuskyHighlevelController.i"
 	@echo "... src/HuskyHighlevelController.s"
+	@echo "... src/MoveRobot.o"
+	@echo "... src/MoveRobot.i"
+	@echo "... src/MoveRobot.s"
 	@echo "... src/husky_highlevel_controller_node.o"
 	@echo "... src/husky_highlevel_controller_node.i"
 	@echo "... src/husky_highlevel_controller_node.s"

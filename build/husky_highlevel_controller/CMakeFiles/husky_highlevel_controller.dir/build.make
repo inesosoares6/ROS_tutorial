@@ -105,16 +105,42 @@ CMakeFiles/husky_highlevel_controller.dir/src/HuskyHighlevelController.cpp.o.pro
 CMakeFiles/husky_highlevel_controller.dir/src/HuskyHighlevelController.cpp.o.provides.build: CMakeFiles/husky_highlevel_controller.dir/src/HuskyHighlevelController.cpp.o
 
 
+CMakeFiles/husky_highlevel_controller.dir/src/MoveRobot.cpp.o: CMakeFiles/husky_highlevel_controller.dir/flags.make
+CMakeFiles/husky_highlevel_controller.dir/src/MoveRobot.cpp.o: /home/ines/catkin_ws/src/husky_highlevel_controller/src/MoveRobot.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ines/catkin_ws/build/husky_highlevel_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/husky_highlevel_controller.dir/src/MoveRobot.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/husky_highlevel_controller.dir/src/MoveRobot.cpp.o -c /home/ines/catkin_ws/src/husky_highlevel_controller/src/MoveRobot.cpp
+
+CMakeFiles/husky_highlevel_controller.dir/src/MoveRobot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/husky_highlevel_controller.dir/src/MoveRobot.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ines/catkin_ws/src/husky_highlevel_controller/src/MoveRobot.cpp > CMakeFiles/husky_highlevel_controller.dir/src/MoveRobot.cpp.i
+
+CMakeFiles/husky_highlevel_controller.dir/src/MoveRobot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/husky_highlevel_controller.dir/src/MoveRobot.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ines/catkin_ws/src/husky_highlevel_controller/src/MoveRobot.cpp -o CMakeFiles/husky_highlevel_controller.dir/src/MoveRobot.cpp.s
+
+CMakeFiles/husky_highlevel_controller.dir/src/MoveRobot.cpp.o.requires:
+
+.PHONY : CMakeFiles/husky_highlevel_controller.dir/src/MoveRobot.cpp.o.requires
+
+CMakeFiles/husky_highlevel_controller.dir/src/MoveRobot.cpp.o.provides: CMakeFiles/husky_highlevel_controller.dir/src/MoveRobot.cpp.o.requires
+	$(MAKE) -f CMakeFiles/husky_highlevel_controller.dir/build.make CMakeFiles/husky_highlevel_controller.dir/src/MoveRobot.cpp.o.provides.build
+.PHONY : CMakeFiles/husky_highlevel_controller.dir/src/MoveRobot.cpp.o.provides
+
+CMakeFiles/husky_highlevel_controller.dir/src/MoveRobot.cpp.o.provides.build: CMakeFiles/husky_highlevel_controller.dir/src/MoveRobot.cpp.o
+
+
 # Object files for target husky_highlevel_controller
 husky_highlevel_controller_OBJECTS = \
 "CMakeFiles/husky_highlevel_controller.dir/src/husky_highlevel_controller_node.cpp.o" \
-"CMakeFiles/husky_highlevel_controller.dir/src/HuskyHighlevelController.cpp.o"
+"CMakeFiles/husky_highlevel_controller.dir/src/HuskyHighlevelController.cpp.o" \
+"CMakeFiles/husky_highlevel_controller.dir/src/MoveRobot.cpp.o"
 
 # External object files for target husky_highlevel_controller
 husky_highlevel_controller_EXTERNAL_OBJECTS =
 
 /home/ines/catkin_ws/devel/.private/husky_highlevel_controller/lib/husky_highlevel_controller/husky_highlevel_controller: CMakeFiles/husky_highlevel_controller.dir/src/husky_highlevel_controller_node.cpp.o
 /home/ines/catkin_ws/devel/.private/husky_highlevel_controller/lib/husky_highlevel_controller/husky_highlevel_controller: CMakeFiles/husky_highlevel_controller.dir/src/HuskyHighlevelController.cpp.o
+/home/ines/catkin_ws/devel/.private/husky_highlevel_controller/lib/husky_highlevel_controller/husky_highlevel_controller: CMakeFiles/husky_highlevel_controller.dir/src/MoveRobot.cpp.o
 /home/ines/catkin_ws/devel/.private/husky_highlevel_controller/lib/husky_highlevel_controller/husky_highlevel_controller: CMakeFiles/husky_highlevel_controller.dir/build.make
 /home/ines/catkin_ws/devel/.private/husky_highlevel_controller/lib/husky_highlevel_controller/husky_highlevel_controller: /opt/ros/melodic/lib/libroscpp.so
 /home/ines/catkin_ws/devel/.private/husky_highlevel_controller/lib/husky_highlevel_controller/husky_highlevel_controller: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
@@ -135,7 +161,7 @@ husky_highlevel_controller_EXTERNAL_OBJECTS =
 /home/ines/catkin_ws/devel/.private/husky_highlevel_controller/lib/husky_highlevel_controller/husky_highlevel_controller: /usr/lib/x86_64-linux-gnu/libpthread.so
 /home/ines/catkin_ws/devel/.private/husky_highlevel_controller/lib/husky_highlevel_controller/husky_highlevel_controller: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
 /home/ines/catkin_ws/devel/.private/husky_highlevel_controller/lib/husky_highlevel_controller/husky_highlevel_controller: CMakeFiles/husky_highlevel_controller.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ines/catkin_ws/build/husky_highlevel_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /home/ines/catkin_ws/devel/.private/husky_highlevel_controller/lib/husky_highlevel_controller/husky_highlevel_controller"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ines/catkin_ws/build/husky_highlevel_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable /home/ines/catkin_ws/devel/.private/husky_highlevel_controller/lib/husky_highlevel_controller/husky_highlevel_controller"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/husky_highlevel_controller.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -145,6 +171,7 @@ CMakeFiles/husky_highlevel_controller.dir/build: /home/ines/catkin_ws/devel/.pri
 
 CMakeFiles/husky_highlevel_controller.dir/requires: CMakeFiles/husky_highlevel_controller.dir/src/husky_highlevel_controller_node.cpp.o.requires
 CMakeFiles/husky_highlevel_controller.dir/requires: CMakeFiles/husky_highlevel_controller.dir/src/HuskyHighlevelController.cpp.o.requires
+CMakeFiles/husky_highlevel_controller.dir/requires: CMakeFiles/husky_highlevel_controller.dir/src/MoveRobot.cpp.o.requires
 
 .PHONY : CMakeFiles/husky_highlevel_controller.dir/requires
 

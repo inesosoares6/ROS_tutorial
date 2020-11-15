@@ -46,6 +46,7 @@ include_directories(
 add_executable(${PROJECT_NAME}
   src/${PROJECT_NAME}_node.cpp
   src/HuskyHighlevelController.cpp
+  src/MoveRobot.cpp
 )
 
 ## Specify libraries to link a library or executable target against
