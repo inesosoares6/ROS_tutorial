@@ -1,0 +1,16 @@
+[35m[1mScanning dependencies of target husky_highlevel_controller[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/husky_highlevel_controller.dir/src/MoveRobot.cpp.o[0m
+[01m[K/home/ines/catkin_ws/src/husky_highlevel_controller/src/MoveRobot.cpp:[m[K In member function ‘[01m[Kvoid husky_highlevel_controller::MoveRobot::moveCallback(const ConstPtr&)[m[K’:
+[01m[K/home/ines/catkin_ws/src/husky_highlevel_controller/src/MoveRobot.cpp:15:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct sensor_msgs::LaserScan_<std::allocator<void> >[m[K’ has no member named ‘[01m[Khader[m[K’; did you mean ‘[01m[Kheader[m[K’?
+         scan.header.frame_id = moveRobot->[01;31m[Khader[m[K.frame_id;
+                                           [01;31m[K^~~~~[m[K
+                                           [32m[Kheader[m[K
+[01m[K/home/ines/catkin_ws/src/husky_highlevel_controller/src/MoveRobot.cpp:25:28:[m[K [01;31m[Kerror: [m[Kinvalid operands of types ‘[01m[Kboost::detail::sp_array_access<const sensor_msgs::LaserScan_<std::allocator<void> > >::type {aka void}[m[K’ and ‘[01m[Kint[m[K’ to binary ‘[01m[Koperator>[m[K’
+             if([01;31m[KmoveRobot[i]>30[m[K){
+                [01;31m[K~~~~~~~~~~~~^~~[m[K
+CMakeFiles/husky_highlevel_controller.dir/build.make:110: recipe for target 'CMakeFiles/husky_highlevel_controller.dir/src/MoveRobot.cpp.o' failed
+make[2]: *** [CMakeFiles/husky_highlevel_controller.dir/src/MoveRobot.cpp.o] Error 1
+make[1]: *** [CMakeFiles/husky_highlevel_controller.dir/all] Error 2
+CMakeFiles/Makefile2:675: recipe for target 'CMakeFiles/husky_highlevel_controller.dir/all' failed
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2

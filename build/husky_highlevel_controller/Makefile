@@ -467,19 +467,6 @@ sensor_msgs_generate_messages_eus/fast:
 .PHONY : sensor_msgs_generate_messages_eus/fast
 
 #=============================================================================
-# Target rules for targets named HuskyHighlevelController
-
-# Build rule for target.
-HuskyHighlevelController: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 HuskyHighlevelController
-.PHONY : HuskyHighlevelController
-
-# fast build rule for target.
-HuskyHighlevelController/fast:
-	$(MAKE) -f CMakeFiles/HuskyHighlevelController.dir/build.make CMakeFiles/HuskyHighlevelController.dir/build
-.PHONY : HuskyHighlevelController/fast
-
-#=============================================================================
 # Target rules for targets named std_msgs_generate_messages_nodejs
 
 # Build rule for target.
@@ -642,7 +629,6 @@ src/HuskyHighlevelController.o: src/HuskyHighlevelController.cpp.o
 # target to build an object file
 src/HuskyHighlevelController.cpp.o:
 	$(MAKE) -f CMakeFiles/husky_highlevel_controller.dir/build.make CMakeFiles/husky_highlevel_controller.dir/src/HuskyHighlevelController.cpp.o
-	$(MAKE) -f CMakeFiles/HuskyHighlevelController.dir/build.make CMakeFiles/HuskyHighlevelController.dir/src/HuskyHighlevelController.cpp.o
 .PHONY : src/HuskyHighlevelController.cpp.o
 
 src/HuskyHighlevelController.i: src/HuskyHighlevelController.cpp.i
@@ -652,7 +638,6 @@ src/HuskyHighlevelController.i: src/HuskyHighlevelController.cpp.i
 # target to preprocess a source file
 src/HuskyHighlevelController.cpp.i:
 	$(MAKE) -f CMakeFiles/husky_highlevel_controller.dir/build.make CMakeFiles/husky_highlevel_controller.dir/src/HuskyHighlevelController.cpp.i
-	$(MAKE) -f CMakeFiles/HuskyHighlevelController.dir/build.make CMakeFiles/HuskyHighlevelController.dir/src/HuskyHighlevelController.cpp.i
 .PHONY : src/HuskyHighlevelController.cpp.i
 
 src/HuskyHighlevelController.s: src/HuskyHighlevelController.cpp.s
@@ -662,8 +647,34 @@ src/HuskyHighlevelController.s: src/HuskyHighlevelController.cpp.s
 # target to generate assembly for a file
 src/HuskyHighlevelController.cpp.s:
 	$(MAKE) -f CMakeFiles/husky_highlevel_controller.dir/build.make CMakeFiles/husky_highlevel_controller.dir/src/HuskyHighlevelController.cpp.s
-	$(MAKE) -f CMakeFiles/HuskyHighlevelController.dir/build.make CMakeFiles/HuskyHighlevelController.dir/src/HuskyHighlevelController.cpp.s
 .PHONY : src/HuskyHighlevelController.cpp.s
+
+src/MoveRobot.o: src/MoveRobot.cpp.o
+
+.PHONY : src/MoveRobot.o
+
+# target to build an object file
+src/MoveRobot.cpp.o:
+	$(MAKE) -f CMakeFiles/husky_highlevel_controller.dir/build.make CMakeFiles/husky_highlevel_controller.dir/src/MoveRobot.cpp.o
+.PHONY : src/MoveRobot.cpp.o
+
+src/MoveRobot.i: src/MoveRobot.cpp.i
+
+.PHONY : src/MoveRobot.i
+
+# target to preprocess a source file
+src/MoveRobot.cpp.i:
+	$(MAKE) -f CMakeFiles/husky_highlevel_controller.dir/build.make CMakeFiles/husky_highlevel_controller.dir/src/MoveRobot.cpp.i
+.PHONY : src/MoveRobot.cpp.i
+
+src/MoveRobot.s: src/MoveRobot.cpp.s
+
+.PHONY : src/MoveRobot.s
+
+# target to generate assembly for a file
+src/MoveRobot.cpp.s:
+	$(MAKE) -f CMakeFiles/husky_highlevel_controller.dir/build.make CMakeFiles/husky_highlevel_controller.dir/src/MoveRobot.cpp.s
+.PHONY : src/MoveRobot.cpp.s
 
 src/husky_highlevel_controller_node.o: src/husky_highlevel_controller_node.cpp.o
 
@@ -699,11 +710,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
-	@echo "... install"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... install"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... list_install_components"
@@ -725,7 +736,6 @@ help:
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_eus"
-	@echo "... HuskyHighlevelController"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... install/local"
 	@echo "... doxygen"
@@ -744,6 +754,9 @@ help:
 	@echo "... src/HuskyHighlevelController.o"
 	@echo "... src/HuskyHighlevelController.i"
 	@echo "... src/HuskyHighlevelController.s"
+	@echo "... src/MoveRobot.o"
+	@echo "... src/MoveRobot.i"
+	@echo "... src/MoveRobot.s"
 	@echo "... src/husky_highlevel_controller_node.o"
 	@echo "... src/husky_highlevel_controller_node.i"
 	@echo "... src/husky_highlevel_controller_node.s"

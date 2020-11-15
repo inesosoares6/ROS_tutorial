@@ -671,10 +671,10 @@ clean: CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
 # Target rules for target CMakeFiles/husky_highlevel_controller.dir
 
 # All Build rule for target.
-CMakeFiles/husky_highlevel_controller.dir/all: CMakeFiles/HuskyHighlevelController.dir/all
+CMakeFiles/husky_highlevel_controller.dir/all:
 	$(MAKE) -f CMakeFiles/husky_highlevel_controller.dir/build.make CMakeFiles/husky_highlevel_controller.dir/depend
 	$(MAKE) -f CMakeFiles/husky_highlevel_controller.dir/build.make CMakeFiles/husky_highlevel_controller.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ines/catkin_ws/build/husky_highlevel_controller/CMakeFiles --progress-num=14,15,16 "Built target husky_highlevel_controller"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ines/catkin_ws/build/husky_highlevel_controller/CMakeFiles --progress-num=12,13,14,15 "Built target husky_highlevel_controller"
 .PHONY : CMakeFiles/husky_highlevel_controller.dir/all
 
 # Include target in all.
@@ -684,7 +684,7 @@ all: CMakeFiles/husky_highlevel_controller.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/husky_highlevel_controller.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ines/catkin_ws/build/husky_highlevel_controller/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ines/catkin_ws/build/husky_highlevel_controller/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/husky_highlevel_controller.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ines/catkin_ws/build/husky_highlevel_controller/CMakeFiles 0
 .PHONY : CMakeFiles/husky_highlevel_controller.dir/rule
@@ -797,43 +797,6 @@ CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/HuskyHighlevelController.dir
-
-# All Build rule for target.
-CMakeFiles/HuskyHighlevelController.dir/all:
-	$(MAKE) -f CMakeFiles/HuskyHighlevelController.dir/build.make CMakeFiles/HuskyHighlevelController.dir/depend
-	$(MAKE) -f CMakeFiles/HuskyHighlevelController.dir/build.make CMakeFiles/HuskyHighlevelController.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ines/catkin_ws/build/husky_highlevel_controller/CMakeFiles --progress-num=1,2 "Built target HuskyHighlevelController"
-.PHONY : CMakeFiles/HuskyHighlevelController.dir/all
-
-# Include target in all.
-all: CMakeFiles/HuskyHighlevelController.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/HuskyHighlevelController.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ines/catkin_ws/build/husky_highlevel_controller/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/HuskyHighlevelController.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ines/catkin_ws/build/husky_highlevel_controller/CMakeFiles 0
-.PHONY : CMakeFiles/HuskyHighlevelController.dir/rule
-
-# Convenience name for target.
-HuskyHighlevelController: CMakeFiles/HuskyHighlevelController.dir/rule
-
-.PHONY : HuskyHighlevelController
-
-# clean rule for target.
-CMakeFiles/HuskyHighlevelController.dir/clean:
-	$(MAKE) -f CMakeFiles/HuskyHighlevelController.dir/build.make CMakeFiles/HuskyHighlevelController.dir/clean
-.PHONY : CMakeFiles/HuskyHighlevelController.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/HuskyHighlevelController.dir/clean
 
 .PHONY : clean
 
@@ -1138,7 +1101,7 @@ gtest/googlemock/preinstall: gtest/googlemock/gtest/preinstall
 gtest/googlemock/CMakeFiles/gmock_main.dir/all:
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ines/catkin_ws/build/husky_highlevel_controller/CMakeFiles --progress-num=6,7,8,9 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ines/catkin_ws/build/husky_highlevel_controller/CMakeFiles --progress-num=4,5,6,7 "Built target gmock_main"
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1170,7 +1133,7 @@ clean: gtest/googlemock/CMakeFiles/gmock_main.dir/clean
 gtest/googlemock/CMakeFiles/gmock.dir/all:
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ines/catkin_ws/build/husky_highlevel_controller/CMakeFiles --progress-num=3,4,5 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ines/catkin_ws/build/husky_highlevel_controller/CMakeFiles --progress-num=1,2,3 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1221,7 +1184,7 @@ gtest/googlemock/gtest/preinstall:
 gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all: gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ines/catkin_ws/build/husky_highlevel_controller/CMakeFiles --progress-num=12,13 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ines/catkin_ws/build/husky_highlevel_controller/CMakeFiles --progress-num=10,11 "Built target gtest_main"
 .PHONY : gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1253,7 +1216,7 @@ clean: gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
 gtest/googlemock/gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ines/catkin_ws/build/husky_highlevel_controller/CMakeFiles --progress-num=10,11 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ines/catkin_ws/build/husky_highlevel_controller/CMakeFiles --progress-num=8,9 "Built target gtest"
 .PHONY : gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.

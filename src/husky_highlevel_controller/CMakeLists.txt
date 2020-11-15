@@ -8,6 +8,7 @@ add_definitions(--std=c++11)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   sensor_msgs
+  geometry_msgs
 )
 
 ###################################
@@ -26,6 +27,7 @@ catkin_package(
   CATKIN_DEPENDS 
     roscpp
     sensor_msgs
+    geometry_msgs
 #  DEPENDS 
 )
 
@@ -44,6 +46,7 @@ include_directories(
 add_executable(${PROJECT_NAME}
   src/${PROJECT_NAME}_node.cpp
   src/HuskyHighlevelController.cpp
+  src/MoveRobot.cpp
 )
 
 ## Specify libraries to link a library or executable target against

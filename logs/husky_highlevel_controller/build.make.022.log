@@ -1,0 +1,12 @@
+[35m[1mScanning dependencies of target husky_highlevel_controller[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/husky_highlevel_controller.dir/src/husky_highlevel_controller_node.cpp.o[0m
+In file included from [01m[K/home/ines/catkin_ws/src/husky_highlevel_controller/src/husky_highlevel_controller_node.cpp:3:0[m[K:
+[01m[K/home/ines/catkin_ws/src/husky_highlevel_controller/include/husky_highlevel_controller/MoveRobot.hpp:15:80:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+             void moveCallback(const sensor_msgs::LaserScan::ConstPtr& moveRobot[01;31m[K)[m[K
+                                                                                [01;31m[K^[m[K
+CMakeFiles/husky_highlevel_controller.dir/build.make:62: recipe for target 'CMakeFiles/husky_highlevel_controller.dir/src/husky_highlevel_controller_node.cpp.o' failed
+make[2]: *** [CMakeFiles/husky_highlevel_controller.dir/src/husky_highlevel_controller_node.cpp.o] Error 1
+CMakeFiles/Makefile2:675: recipe for target 'CMakeFiles/husky_highlevel_controller.dir/all' failed
+make[1]: *** [CMakeFiles/husky_highlevel_controller.dir/all] Error 2
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2
