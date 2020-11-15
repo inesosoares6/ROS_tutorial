@@ -1,0 +1,8 @@
+prefix=/home/ines/catkin_ws/devel/.private/husky_highlevel_controller_ex_3
+
+Name: husky_highlevel_controller_ex_3
+Description: Description of husky_highlevel_controller_ex_3
+Version: 0.0.0
+Cflags: -I/home/ines/catkin_ws/src/husky_highlevel_controller_ex_3/include
+Libs: -L${prefix}/lib 
+Requires: roscpp sensor_msgs geometry_msgs tf
