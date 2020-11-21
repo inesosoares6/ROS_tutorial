@@ -1,8 +1,0 @@
-CMakeFiles/husky_highlevel_controller.dir/src/husky_highlevel_controller_node.cpp.o: In function `main':
-husky_highlevel_controller_node.cpp:(.text+0x15d): undefined reference to `husky_highlevel_controller::Scan2::Scan2()'
-husky_highlevel_controller_node.cpp:(.text+0x19e): undefined reference to `husky_highlevel_controller::Scan2::~Scan2()'
-husky_highlevel_controller_node.cpp:(.text+0x25e): undefined reference to `husky_highlevel_controller::Scan2::~Scan2()'
-collect2: error: ld returned 1 exit status
-make[2]: *** [/home/ines/catkin_ws/devel/.private/husky_highlevel_controller/lib/husky_highlevel_controller/husky_highlevel_controller] Error 1
-make[1]: *** [CMakeFiles/husky_highlevel_controller.dir/all] Error 2
-make: *** [all] Error 2

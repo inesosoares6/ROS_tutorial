@@ -23,6 +23,9 @@ public:
 	 */
 	HuskyHighlevelController(ros::NodeHandle& nodeHandle);
 
+
+	void laser_scan_Callback(const sensor_msgs::LaserScan &laser_scan_msgs);
+
 	/*!
 	 * Destructor.
 	 */
@@ -31,7 +34,6 @@ public:
 private:
 	ros::NodeHandle nodeHandle_;
 
-	void laser_scan_Callback(const sensor_msgs::LaserScan::ConstPtr& laser_scan_msgs);
 
 	//function related to pillar visualization
 	//(http://wiki.ros.org/rviz/DisplayTypes/Marker)
@@ -60,11 +62,11 @@ private:
 	geometry_msgs::Twist cmd_vel_command;
 
 	//Subscribers
-	ros::Subscriber laser_scan_subs;
+	ros::Subscriber laser_scan_subs_;
 
 	//Publishers
-	ros::Publisher controlled_cmd_vel_publ;
-	ros::Publisher pillar_vis_publ;
+	ros::Publisher controlled_cmd_vel_publ_;
+	ros::Publisher pillar_vis_publ_;
 };
 
 } /* namespace */
