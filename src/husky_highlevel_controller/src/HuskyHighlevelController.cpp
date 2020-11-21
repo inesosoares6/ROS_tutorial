@@ -5,16 +5,16 @@ namespace husky_highlevel_controller {
 HuskyHighlevelController::HuskyHighlevelController(ros::NodeHandle& nodeHandle) :
   nodeHandle_(nodeHandle)
 {
-  nodeHandle.getParam("/husky_highlevel_controller/husky/topic_name", laser_scan_topic_name);
-  nodeHandle.getParam("/husky_highlevel_controller/husky/queue_size", laser_scan_queue_size);
-  nodeHandle.getParam("/husky_highlevel_controller/husky/cmd_vel_topic_name", cmd_vel_topic_name);
-  nodeHandle.getParam("/husky_highlevel_controller/husky/cmd_vel_queue_size", cmd_vel_queue_size);
-  nodeHandle.getParam("/husky_highlevel_controller/husky/visualization_topic_name", visualization_topic_name);
-  nodeHandle.getParam("/husky_highlevel_controller/husky/visualization_queue_size", visualization_queue_size);
-  nodeHandle.getParam("/husky_highlevel_controller/husky/zPosPillar", zPosPillar);
+  nodeHandle.getParam("/husky_highlevel_controller/laser_scan_topic_name", laser_scan_topic_name);
+  nodeHandle.getParam("/husky_highlevel_controller/laser_scan_queue_size", laser_scan_queue_size);
+  nodeHandle.getParam("/husky_highlevel_controller/cmd_vel_topic_name", cmd_vel_topic_name);
+  nodeHandle.getParam("/husky_highlevel_controller/cmd_vel_queue_size", cmd_vel_queue_size);
+  nodeHandle.getParam("/husky_highlevel_controller/visualization_topic_name", visualization_topic_name);
+  nodeHandle.getParam("/husky_highlevel_controller/visualization_queue_size", visualization_queue_size);
+  nodeHandle.getParam("/husky_highlevel_controller/zPosPillar", zPosPillar);
 
   
-	laser_scan_subs_ = nodeHandle_.subscribe("/scan", 1, &HuskyHighlevelController::laser_scan_Callback, this); 
+	laser_scan_subs_ = nodeHandle_.subscribe(laser_scan_topic_name, laser_scan_queue_size, &HuskyHighlevelController::laser_scan_Callback, this); 
   controlled_cmd_vel_publ_ = nodeHandle_.advertise<geometry_msgs::Twist>(cmd_vel_topic_name,cmd_vel_queue_size);
   pillar_vis_publ_ = nodeHandle_.advertise<visualization_msgs::Marker>(visualization_topic_name,visualization_queue_size);
 
