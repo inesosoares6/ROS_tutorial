@@ -1,0 +1,4 @@
+Symlinking /home/ines/catkin_ws/devel/share/husky_highlevel_controller/cmake/husky_highlevel_controllerConfig.cmake
+Symlinking /home/ines/catkin_ws/devel/share/husky_highlevel_controller/cmake/husky_highlevel_controllerConfig-version.cmake
+Symlinking /home/ines/catkin_ws/devel/lib/husky_highlevel_controller/husky_highlevel_controller
+Symlinking /home/ines/catkin_ws/devel/lib/pkgconfig/husky_highlevel_controller.pc

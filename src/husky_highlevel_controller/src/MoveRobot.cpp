@@ -27,10 +27,10 @@ namespace husky_highlevel_controller{
             } else{
                 scan.ranges[i]=moveRobot->ranges[i];
             }
-            ROS_INFO_STREAM("/MoveRobot laser range values (m) :" << scan.ranges[i]);
+            //ROS_INFO_STREAM("/MoveRobot laser values:" << scan.ranges[i]);
         }
 
-        ROS_INFO_STREAM("Maximum laser distance (m) : " << scan.range_max);
+        //ROS_INFO_STREAM("Maximum laser distance: " << scan.range_max);
 
         moveRobot_pub.publish(scan);
     }

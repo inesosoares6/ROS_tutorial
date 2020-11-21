@@ -233,9 +233,6 @@ GTEST_MAIN_LIBRARY:FILEPATH=GTEST_MAIN_LIBRARY-NOTFOUND
 //Path to a library.
 GTEST_MAIN_LIBRARY_DEBUG:FILEPATH=GTEST_MAIN_LIBRARY_DEBUG-NOTFOUND
 
-//Dependencies for target
-HuskyHighlevelController_LIB_DEPENDS:STATIC=
-
 //lsb_release executable was found
 LSB_FOUND:BOOL=TRUE
 

@@ -1,6 +1,0 @@
-husky_highlevel_controller_ex_3
-/home/ines/catkin_ws/devel/.private/husky_highlevel_controller_ex_3/cmake.lock /home/ines/catkin_ws/devel/./cmake.lock
-/home/ines/catkin_ws/devel/.private/husky_highlevel_controller_ex_3/share/husky_highlevel_controller_ex_3/cmake/husky_highlevel_controller_ex_3Config.cmake /home/ines/catkin_ws/devel/share/husky_highlevel_controller_ex_3/cmake/husky_highlevel_controller_ex_3Config.cmake
-/home/ines/catkin_ws/devel/.private/husky_highlevel_controller_ex_3/share/husky_highlevel_controller_ex_3/cmake/husky_highlevel_controller_ex_3Config-version.cmake /home/ines/catkin_ws/devel/share/husky_highlevel_controller_ex_3/cmake/husky_highlevel_controller_ex_3Config-version.cmake
-/home/ines/catkin_ws/devel/.private/husky_highlevel_controller_ex_3/lib/husky_highlevel_controller_ex_3/husky_highlevel_controller_ex_3 /home/ines/catkin_ws/devel/lib/husky_highlevel_controller_ex_3/husky_highlevel_controller_ex_3
-/home/ines/catkin_ws/devel/.private/husky_highlevel_controller_ex_3/lib/pkgconfig/husky_highlevel_controller_ex_3.pc /home/ines/catkin_ws/devel/lib/pkgconfig/husky_highlevel_controller_ex_3.pc

@@ -12,4 +12,4 @@ export LD_LIBRARY_PATH='/opt/ros/melodic/lib'
 export PKG_CONFIG_PATH='/opt/ros/melodic/lib/pkgconfig'
 export PWD='/home/ines/catkin_ws/build/catkin_tools_prebuild'
 export ROSLISP_PACKAGE_DIRECTORIES="/home/ines/catkin_ws/devel/.private/catkin_tools_prebuild/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/ines/catkin_ws/build/catkin_tools_prebuild:$ROS_PACKAGE_PATH"
+export ROS_PACKAGE_PATH='/home/ines/catkin_ws/build/catkin_tools_prebuild:/home/ines/catkin_ws/src/husky_highlevel_controller:/opt/ros/melodic/share'

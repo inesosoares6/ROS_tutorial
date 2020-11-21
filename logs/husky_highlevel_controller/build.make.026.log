@@ -1,4 +1,0 @@
-[35m[1mScanning dependencies of target husky_highlevel_controller[0m
-[ 25%] [32mBuilding CXX object CMakeFiles/husky_highlevel_controller.dir/src/MoveRobot.cpp.o[0m
-[ 50%] [32m[1mLinking CXX executable /home/ines/catkin_ws/devel/.private/husky_highlevel_controller/lib/husky_highlevel_controller/husky_highlevel_controller[0m
-[100%] Built target husky_highlevel_controller

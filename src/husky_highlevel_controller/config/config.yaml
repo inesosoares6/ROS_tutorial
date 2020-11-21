@@ -1,8 +1,7 @@
-husky:
-    laser_scan_topic_name: /scan
-    laser_scan_queue_size: 1
-    cmd_vel_topic_name: /cmd_vel
-    cmd_vel_queue_size: 1
-    visualization_topic_name: visualization_marker
-    visualization_queue_size: 0
-    zPosPillar: -0.5
+laser_scan_topic_name: /scan
+laser_scan_queue_size: 1
+cmd_vel_topic_name: /cmd_vel
+cmd_vel_queue_size: 1
+visualization_topic_name: visualization_marker
+visualization_queue_size: 0
+zPosPillar: -0.5
