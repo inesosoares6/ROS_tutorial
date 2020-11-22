@@ -22,7 +22,7 @@ HuskyHighlevelController::HuskyHighlevelController(ros::NodeHandle& nodeHandle) 
 }
 void HuskyHighlevelController::laser_scan_Callback(const sensor_msgs::LaserScan &laser_scan_msgs){
   minDistance = 30;
-  ROS_INFO_STREAM("Entered laser_scan_Callback");
+
   //calculate smallest distance and respective angle
   laser_scan_distance=laser_scan_msgs.ranges;
   for (int i = 0; i < laser_scan_distance.size(); i++){
