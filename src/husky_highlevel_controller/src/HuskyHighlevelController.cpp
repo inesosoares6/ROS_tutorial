@@ -49,7 +49,12 @@ void HuskyHighlevelController::laser_scan_Callback(const sensor_msgs::LaserScan 
     cmd_vel_command.angular.z = (-1) * yPosPillar * p_gain_ang;
   } else{
     cmd_vel_command.linear.x =  1.0;
-    cmd_vel_command.angular.z = 0;
+    cmd_vel_command.angular.z = 0.0;
+  }
+
+  if(!status_){
+    cmd_vel_command.linear.x =  0.0;
+    cmd_vel_command.angular.z = 0.0;
   }
 
   controlled_cmd_vel_publ_.publish(cmd_vel_command);
