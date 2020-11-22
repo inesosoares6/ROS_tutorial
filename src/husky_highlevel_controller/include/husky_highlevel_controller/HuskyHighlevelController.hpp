@@ -6,7 +6,7 @@
 #include <sensor_msgs/LaserScan.h>
 #include <geometry_msgs/Twist.h>
 #include <visualization_msgs/Marker.h>
-
+#include <std_msgs/Bool.h>
 
 using std::vector;
 using std::string;
@@ -47,10 +47,12 @@ private:
 	string laser_scan_topic_name;
 	string cmd_vel_topic_name;
 	string visualization_topic_name;
+	string start_stop_topic_name;
 	int laser_scan_queue_size;
 	int cmd_vel_queue_size;
 	int visualization_queue_size;
 	float zPosPillar;
+	int start_stop_queue_size;
 
 	//smalest distance from laser scan
 	float minDistance;

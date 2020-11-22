@@ -1,0 +1,43 @@
+[35m[1mScanning dependencies of target husky_highlevel_controller[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/husky_highlevel_controller.dir/src/husky_highlevel_controller_node.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/husky_highlevel_controller.dir/src/HuskyHighlevelController.cpp.o[0m
+In file included from [01m[K/home/ines/catkin_ws/src/husky_highlevel_controller/src/HuskyHighlevelController.cpp:1:0[m[K:
+[01m[K/home/ines/catkin_ws/src/husky_highlevel_controller/include/husky_highlevel_controller/HuskyHighlevelController.hpp:35:43:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ in namespace ‘[01m[Kstd_msgs[m[K’ does not name a type
+  void start_stop_Callback(const std_msgs::[01;31m[KBool[m[K trigger);
+                                           [01;31m[K^~~~[m[K
+In file included from [01m[K/home/ines/catkin_ws/src/husky_highlevel_controller/src/husky_highlevel_controller_node.cpp:2:0[m[K:
+[01m[K/home/ines/catkin_ws/src/husky_highlevel_controller/include/husky_highlevel_controller/HuskyHighlevelController.hpp:35:43:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ in namespace ‘[01m[Kstd_msgs[m[K’ does not name a type
+  void start_stop_Callback(const std_msgs::[01;31m[KBool[m[K trigger);
+                                           [01;31m[K^~~~[m[K
+[01m[K/home/ines/catkin_ws/src/husky_highlevel_controller/src/HuskyHighlevelController.cpp:[m[K In constructor ‘[01m[Khusky_highlevel_controller::HuskyHighlevelController::HuskyHighlevelController(ros::NodeHandle&)[m[K’:
+[01m[K/home/ines/catkin_ws/src/husky_highlevel_controller/src/HuskyHighlevelController.cpp:15:76:[m[K [01;31m[Kerror: [m[K‘[01m[Kstart_stop_topic_name[m[K’ was not declared in this scope
+   nodeHandle.getParam("/husky_highlevel_controller/start_stop_topic_name", [01;31m[Kstart_stop_topic_name[m[K);
+                                                                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ines/catkin_ws/src/husky_highlevel_controller/src/HuskyHighlevelController.cpp:15:76:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Klaser_scan_topic_name[m[K’
+   nodeHandle.getParam("/husky_highlevel_controller/start_stop_topic_name", [01;36m[Kstart_stop_topic_name[m[K);
+                                                                            [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+                                                                            [32m[Klaser_scan_topic_name[m[K
+[01m[K/home/ines/catkin_ws/src/husky_highlevel_controller/src/HuskyHighlevelController.cpp:16:76:[m[K [01;31m[Kerror: [m[K‘[01m[Kstart_stop_queue_size[m[K’ was not declared in this scope
+   nodeHandle.getParam("/husky_highlevel_controller/start_stop_queue_size", [01;31m[Kstart_stop_queue_size[m[K);
+                                                                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ines/catkin_ws/src/husky_highlevel_controller/src/HuskyHighlevelController.cpp:16:76:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Klaser_scan_queue_size[m[K’
+   nodeHandle.getParam("/husky_highlevel_controller/start_stop_queue_size", [01;36m[Kstart_stop_queue_size[m[K);
+                                                                            [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+                                                                            [32m[Klaser_scan_queue_size[m[K
+[01m[K/home/ines/catkin_ws/src/husky_highlevel_controller/src/HuskyHighlevelController.cpp:[m[K At global scope:
+[01m[K/home/ines/catkin_ws/src/husky_highlevel_controller/src/HuskyHighlevelController.cpp:75:68:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ in namespace ‘[01m[Kstd_msgs[m[K’ does not name a type
+ void HuskyHighlevelController::start_stop_Callback(const std_msgs::[01;31m[KBool[m[K trigger){
+                                                                    [01;31m[K^~~~[m[K
+[01m[K/home/ines/catkin_ws/src/husky_highlevel_controller/src/HuskyHighlevelController.cpp:[m[K In member function ‘[01m[Kvoid husky_highlevel_controller::HuskyHighlevelController::start_stop_Callback(int)[m[K’:
+[01m[K/home/ines/catkin_ws/src/husky_highlevel_controller/src/HuskyHighlevelController.cpp:76:14:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kdata[m[K’ in ‘[01m[Ktrigger[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+   if(trigger.[01;31m[Kdata[m[K==true){
+              [01;31m[K^~~~[m[K
+CMakeFiles/husky_highlevel_controller.dir/build.make:62: recipe for target 'CMakeFiles/husky_highlevel_controller.dir/src/husky_highlevel_controller_node.cpp.o' failed
+make[2]: *** [CMakeFiles/husky_highlevel_controller.dir/src/husky_highlevel_controller_node.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+CMakeFiles/husky_highlevel_controller.dir/build.make:86: recipe for target 'CMakeFiles/husky_highlevel_controller.dir/src/HuskyHighlevelController.cpp.o' failed
+make[2]: *** [CMakeFiles/husky_highlevel_controller.dir/src/HuskyHighlevelController.cpp.o] Error 1
+CMakeFiles/Makefile2:675: recipe for target 'CMakeFiles/husky_highlevel_controller.dir/all' failed
+make[1]: *** [CMakeFiles/husky_highlevel_controller.dir/all] Error 2
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2
