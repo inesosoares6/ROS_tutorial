@@ -23,9 +23,6 @@ public:
 	 */
 	HuskyHighlevelController(ros::NodeHandle& nodeHandle);
 
-
-	void laser_scan_Callback(const sensor_msgs::LaserScan &laser_scan_msgs);
-
 	/*!
 	 * Destructor.
 	 */
@@ -34,6 +31,11 @@ public:
 private:
 	ros::NodeHandle nodeHandle_;
 
+	void laser_scan_Callback(const sensor_msgs::LaserScan &laser_scan_msgs);
+	void start_stop_Callback(const std_msgs::Bool trigger);
+
+	//Emergency status
+	bool status_;
 
 	//function related to pillar visualization
 	//(http://wiki.ros.org/rviz/DisplayTypes/Marker)
@@ -63,6 +65,7 @@ private:
 
 	//Subscribers
 	ros::Subscriber laser_scan_subs_;
+	ros::Subscriber start_stop_subs_;
 
 	//Publishers
 	ros::Publisher controlled_cmd_vel_publ_;

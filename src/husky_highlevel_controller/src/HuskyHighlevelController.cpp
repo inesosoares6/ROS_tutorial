@@ -12,11 +12,14 @@ HuskyHighlevelController::HuskyHighlevelController(ros::NodeHandle& nodeHandle) 
   nodeHandle.getParam("/husky_highlevel_controller/visualization_topic_name", visualization_topic_name);
   nodeHandle.getParam("/husky_highlevel_controller/visualization_queue_size", visualization_queue_size);
   nodeHandle.getParam("/husky_highlevel_controller/zPosPillar", zPosPillar);
+  nodeHandle.getParam("/husky_highlevel_controller/start_stop_topic_name", start_stop_topic_name);
+  nodeHandle.getParam("/husky_highlevel_controller/start_stop_queue_size", start_stop_queue_size);
 
   
 	laser_scan_subs_ = nodeHandle_.subscribe(laser_scan_topic_name, laser_scan_queue_size, &HuskyHighlevelController::laser_scan_Callback, this); 
   controlled_cmd_vel_publ_ = nodeHandle_.advertise<geometry_msgs::Twist>(cmd_vel_topic_name,cmd_vel_queue_size);
   pillar_vis_publ_ = nodeHandle_.advertise<visualization_msgs::Marker>(visualization_topic_name,visualization_queue_size);
+  start_stop_subs_ = nodeHandle_.subscribe(start_stop_topic_name, start_stop_queue_size, &HuskyHighlevelController::start_stop_Callback, this);
 
   ROS_INFO_STREAM("Node launched");
 }
@@ -62,6 +65,14 @@ void HuskyHighlevelController::laser_scan_Callback(const sensor_msgs::LaserScan 
   ROS_INFO_STREAM("Linear vel = " << cmd_vel_command.linear.x);
   ROS_INFO_STREAM("Angular vel = " << cmd_vel_command.angular.z);
 
+}
+
+void HuskyHighlevelController::start_stop_Callback(const std_msgs::Bool trigger){
+  if(trigger.data==true){
+    status_ = true;
+  } else{
+    status_ = false;
+  }
 }
 
 void HuskyHighlevelController::pillar_vis_marker_func(){
